@@ -1,0 +1,6 @@
+@use './index' as *;
+
+.test {
+    @include text-overflow(5);
+}
+

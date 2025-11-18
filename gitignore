@@ -36,4 +36,4 @@ coverage
 __screenshots__/
 
 index.html
-style.css
+./css/*
