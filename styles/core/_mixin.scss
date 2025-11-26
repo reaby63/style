@@ -1,3 +1,4 @@
+// 文字斷行
 @mixin text-overflow($row: 1){
     overflow: hidden;
     text-overflow: ellipsis;
@@ -11,4 +12,40 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: $row;
     }
+}
+
+// mixin - scrollbar 有沒有出現 xy軸 樣式
+// position
+// img百分比縮放(全滿/讓圖片全出現 置中置左置右)
+// flex
+// 字粗體
+
+
+// input(初始化)
+@mixin input($border-radio: 8px, $border-color:gray, $border-focus:gray) {
+    padding: 8px 20px;
+    border-radius: $border-radio;
+    border: solid 1px $border-color;
+    &:focus {
+        border-color: $border-focus;
+        outline: none;
+    }
+}
+
+// button(初始化)
+@mixin button($border-radio: 8px, $border-color: gray, $text-color: #000, $bg-color: gray){
+    cursor: pointer;
+    border-radius: $border-radio;
+    border: solid 1px $border-color;
+    background-color: $bg-color;
+    color: $text-color;
+    transition: all 0.3s;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// scrollbar
+@mixin scrollbar(){
+    
 }

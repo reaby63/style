@@ -4,3 +4,10 @@
     @include text-overflow(5);
 }
 
+input {
+    @include input(10px,blue,gray);
+}
+
+button {
+    @include button(10px, transparent, #fff);
+}
